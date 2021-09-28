@@ -1,0 +1,140 @@
+body {
+    background: #f5f5f5 !important;
+}
+
+h4 {
+    font-family: Adamina, Georgia, 'Times New Roman', Times, serif;
+    color: #30c0d8;
+}
+
+nav > a {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', Verdana, Geneva, Tahoma, sans-serif;
+    color: #616161 !important;
+}
+
+nav > a:hover {
+    color: #000000 !important;
+}
+
+.active {
+    border-bottom: 3px solid #30c0d8;
+}
+
+.author {
+    text-transform: initial;
+}
+
+.author > img {
+    height: 20px;
+    border-radius: 50%;
+}
+
+.content_card {
+    transition: background 0.3s;
+    font-size: 0.95rem;
+}
+
+.content_card a {
+    color: #4a4a4a;
+    transition: color 0.3s;
+}
+.content_card a:hover {
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.content_card .author {
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.featured_text {
+    font-size: 0.8rem;
+}
+
+.no_dec {
+    text-decoration: none !important;
+}
+
+.section_name {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.time, .spec_name {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#days {
+    font-weight: bold;
+}
+
+#days a {
+    text-decoration: none !important;
+    color: #4a4a4a;
+}
+
+#featured_photo {
+    background-image: url('../img/featured.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#featured_filter {
+    background-color: rgba(117, 190, 218, 0.5);
+    background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0), rgba(31, 31, 31, 0.45) 97%);
+}
+
+#featured_card {
+    text-decoration: none;
+}
+
+#featured_content {
+    text-transform: uppercase;
+    color: white;
+    height: 400px;
+}
+
+#featured_title {
+    font-weight: bold;
+}
+
+#logo {
+    width: 18px;
+}
+
+#nav {
+    background: white;
+}
+
+#home {
+    text-decoration: none;
+}
+
+#schedule .author {
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+#schedule > div, #appointments > div {
+    border-bottom: 2px solid #eeeeee;
+}
+
+#schedule .content_card:hover {
+    transition: background 0.3s;
+    background: rgba(242, 253, 255, 0.5);
+}
+
+#today {
+    color: #30c0d8;
+}
+
+#on_air .time::after {
+    content: "Сейчас в эфире";
+    float: right;
+    text-transform: uppercase;
+    color: #30c0d8;
+    font-size: 0.85rem;
+}
