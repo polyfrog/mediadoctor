@@ -2,6 +2,10 @@ body {
     background: #f5f5f5 !important;
 }
 
+button > img {
+    width: 20px;
+}
+
 h4 {
     font-family: Adamina, Georgia, 'Times New Roman', Times, serif;
     color: #30c0d8;
@@ -11,10 +15,43 @@ nav > a {
     text-transform: uppercase;
     font-family: 'Source Sans Pro', Verdana, Geneva, Tahoma, sans-serif;
     color: #616161 !important;
+    transition: color 0.3s;
 }
 
 nav > a:hover {
     color: #000000 !important;
+    transition: color 0.3s;
+}
+
+.accordion-body {
+    background: rgba(242, 253, 255, 0.5);
+}
+
+.accordion-body .content_card {
+    border-top: 2px solid #eeeeee;
+}
+
+.accordion-button {
+    box-shadow: none !important;
+}
+
+.accordion-button::after {
+    margin-bottom: 0;
+    margin-top: 2.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    color: inherit !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%20fill='%23212529'%3E%3Cpath%20fill-rule='evenodd'%20d='M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708z'/%3E%3C/svg%3E") !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
 }
 
 .active {
@@ -49,7 +86,35 @@ nav > a:hover {
     color: #4a4a4a;
 }
 
+.content_card > button {
+    border-width: 2px;
+    padding-top: 0.7rem;
+    border-radius: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: white;
+}
+
+.content_card > button:hover {
+    color: white;
+}
+
+.ep_info {
+    color: #9b9b9b;
+    font-size: 0.95rem;
+}
+
 .featured_text {
+    font-size: 0.8rem;
+}
+
+.highlight::after {
+    content: "Самое главное";
+    padding-top: 5px;
+    float: right;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #30c0d8;
     font-size: 0.8rem;
 }
 
@@ -62,7 +127,26 @@ nav > a:hover {
     text-transform: uppercase;
 }
 
-.time, .spec_name {
+.section_name > a {
+    text-decoration: none !important;
+    color:#4a4a4a;
+    transition: color 0.3s;
+}
+
+.section_name > a:hover {
+    color:#000000;
+    transition: color 0.3s;
+}
+
+.spec_name {
+    color: #4a4a4a;
+    font-size: 1.15rem;
+    font-weight: bold;
+    width: 110%;
+}
+
+.time {
+    color: #4a4a4a;
     font-size: 1.1rem;
     font-weight: bold;
 }
@@ -73,7 +157,7 @@ nav > a:hover {
 
 #days a {
     text-decoration: none !important;
-    color: #4a4a4a;
+    color: #171717;
 }
 
 #featured_photo {
@@ -85,6 +169,12 @@ nav > a:hover {
 #featured_filter {
     background-color: rgba(117, 190, 218, 0.5);
     background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0), rgba(31, 31, 31, 0.45) 97%);
+    transition: background-color 0.3s;
+}
+
+#featured_filter:hover {
+    background-color: rgba(49, 150, 170, 0.5);
+    transition: background-color 0.3s;
 }
 
 #featured_card {
@@ -133,8 +223,10 @@ nav > a:hover {
 
 #on_air .time::after {
     content: "Сейчас в эфире";
+    padding-top: 5px;
+    font-weight: 600;
     float: right;
     text-transform: uppercase;
     color: #30c0d8;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }

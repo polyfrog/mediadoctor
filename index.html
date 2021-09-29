@@ -8,11 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"> 
     <title>MediaDoctor</title>
 </head>
 <body>
-    <header class="navbar navbar-expand-lg bg-white d-flex justify-content-between pb-0 shadow-sm mb-4" id="nav">
+    <header class="navbar navbar-expand-xl navbar-light bg-white d-flex justify-content-between pb-0 shadow-sm mb-4" id="nav">
         <div class="container">
             <div class="navbar-brand pb-3">
                 <a href="#" id="home">
@@ -20,8 +21,11 @@
                     <h4 class="d-inline">media<b>doctor</b></h4>
                 </a>
             </div>
-            <div id="navbarScroll">
-                <nav class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_collapse" aria-controls="navbar_collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar_collapse" class="collapse navbar-collapse">
+                <nav class="navbar-nav w-100 d-flex justify-content-end">
                     <a href="#" class="nav-link active pb-3 ms-5" aria-current="page">Все программы</a>
                     <a href="#" class="nav-link pb-3 ms-5">Архив передач</a>
                     <a href="#" class="nav-link pb-3 ms-5">Расписание</a>
@@ -34,7 +38,7 @@
     <main>
         <section class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                     <div class="row">
                         <article class="col my-3" id="featured">
                             <div id="featured_photo">
@@ -131,12 +135,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                     <div class="row">
-                        <div class="col my-3">
+                        <div class="col-6 my-3">
                             <article id="schedule" class="bg-white">
                                 <div id="cal" class="px-3 pt-3">
-                                    <p class="section_name d-flex justify-content-center">Расписание</p>
+                                    <p class="section_name d-flex justify-content-center">
+                                        <a href="#">Расписание</a>
+                                    </p>
                                     <div id="days" class="d-flex flex-row justify-content-between">
                                         <a href="#"><p id="today">Сегодня</p></a>
                                         <a href="#"><p>17, сб</p></a>
@@ -145,7 +151,7 @@
                                     </div>
                                 </div>
                                 <div class="content_card px-3 pt-3" id="on_air">
-                                    <div class="time">12:45</div>
+                                    <div class="time pb-2">12:45</div>
                                     <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
                                     <a href="#" class="no_dec">
                                         <figure class="author d-flex justify-content-end align-items-center pt-2">
@@ -155,7 +161,7 @@
                                     </a>
                                 </div>
                                 <div class="content_card px-3 pt-3">
-                                    <div class="time">12:45</div>
+                                    <div class="time pb-2">12:45</div>
                                     <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
                                     <a href="#" class="no_dec">
                                         <figure class="author d-flex justify-content-end align-items-center pt-2">
@@ -165,7 +171,7 @@
                                     </a>
                                 </div>
                                 <div class="content_card px-3 pt-3">
-                                    <div class="time">12:45</div>
+                                    <div class="time pb-2">12:45</div>
                                     <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
                                     <a href="#" class="no_dec">
                                         <figure class="author d-flex justify-content-end align-items-center pt-2">
@@ -175,7 +181,7 @@
                                     </a>
                                 </div>
                                 <div class="content_card px-3 pt-3">
-                                    <div class="time">12:45</div>
+                                    <div class="time pb-2">12:45</div>
                                     <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
                                     <a href="#" class="no_dec">
                                         <figure class="author d-flex justify-content-end align-items-center pt-2">
@@ -185,7 +191,7 @@
                                     </a>
                                 </div>
                                 <div class="content_card px-3 pt-3">
-                                    <div class="time">12:45</div>
+                                    <div class="time pb-2">12:45</div>
                                     <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
                                     <a href="#" class="no_dec">
                                         <figure class="author d-flex justify-content-end align-items-center pt-2">
@@ -195,7 +201,7 @@
                                     </a>
                                 </div>
                                 <div class="content_card px-3 pt-3">
-                                    <div class="time">12:45</div>
+                                    <div class="time pb-2">12:45</div>
                                     <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
                                     <a href="#" class="no_dec">
                                         <figure class="author d-flex justify-content-end align-items-center pt-2">
@@ -206,10 +212,376 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col my-3">
+                        <div class="col-6 my-3">
                             <article id="appointments" class="bg-white">
                                 <div class="px-3 pt-3">
-                                    <p class="section_name d-flex justify-content-center">Онлайн-приём</p>
+                                    <p class="section_name d-flex justify-content-center">
+                                        <a href="#">Онлайн-приём</a>
+                                    </p>
+                                </div>
+                                <div class="accordion accordion-flush" id="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="heading_one">
+                                            <button class="accordion-button collapsed pb-1" id="heading_one" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_one" aria-expanded="false" aria-controls="collapse_one">
+                                                <div class="w-100 p-0">
+                                                    <p class="spec_name highlight mt-0 me-5 mb-1">Кардиолог</p>
+                                                    <p class="ep_info">10 выпусков</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="accordion-collapse collapse" id="collapse_one" aria-labelledby="heading_one" data-bs-parent="#accordion">
+                                            <div class="accordion-body pt-0">
+                                                <div class="content_card px-2 pt-2 mt-0">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-2 pt-2">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-2 pt-2">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card pt-3 button_bg">
+                                                    <button type="button" class="btn btn-outline-info w-100 pb-0">
+                                                        <p class="pt-1 pb-0">Смотреть всё</p> 
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="heading_two">
+                                            <button class="accordion-button collapsed pb-1" id="heading_two" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_two" aria-expanded="false" aria-controls="collapse_two">
+                                                <div class="w-100 p-0">
+                                                    <p class="spec_name highlight mt-0 me-5 mb-1">Гастроэнтеролог</p>
+                                                    <p class="ep_info">25 выпусков</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="accordion-collapse collapse" id="collapse_two" aria-labelledby="heading_two" data-bs-parent="#accordion">
+                                            <div class="accordion-body pt-0">
+                                                <div class="content_card px-2 pt-2 mt-0">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="heading_three">
+                                            <button class="accordion-button collapsed pb-1" id="heading_three" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_three" aria-expanded="false" aria-controls="collapse_three">
+                                                <div class="w-100 p-0">
+                                                    <p class="spec_name highlight mt-0 me-5 mb-1">Эндокринолог</p>
+                                                    <p class="ep_info">10 выпусков</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="accordion-collapse collapse" id="collapse_three" aria-labelledby="heading_three" data-bs-parent="#accordion">
+                                            <div class="accordion-body pt-0">
+                                                <div class="content_card px-2 pt-2 mt-0">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="heading_four">
+                                            <button class="accordion-button collapsed pb-1" id="heading_four" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_four" aria-expanded="false" aria-controls="collapse_four">
+                                                <div class="w-100 p-0">
+                                                    <p class="spec_name highlight mt-0 me-5 mb-1">Аритмолог</p>
+                                                    <p class="ep_info">10 выпусков</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="accordion-collapse collapse" id="collapse_four" aria-labelledby="heading_four" data-bs-parent="#accordion">
+                                            <div class="accordion-body pt-0">
+                                                <div class="content_card px-2 pt-2 mt-0">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="heading_five">
+                                            <button class="accordion-button collapsed pb-1" id="heading_five" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_five" aria-expanded="false" aria-controls="collapse_five">
+                                                <div class="w-100 p-0">
+                                                    <p class="spec_name highlight mt-0 me-5 mb-1">Маммолог</p>
+                                                    <p class="ep_info">10 выпусков</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="accordion-collapse collapse" id="collapse_five" aria-labelledby="heading_five" data-bs-parent="#accordion">
+                                            <div class="accordion-body pt-0">
+                                                <div class="content_card px-2 pt-2 mt-0">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="heading_six">
+                                            <button class="accordion-button collapsed pb-1" id="heading_six" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_six" aria-expanded="false" aria-controls="collapse_six">
+                                                <div class="w-100 p-0">
+                                                    <p class="spec_name mt-0 me-5 mb-1">Уролог</p>
+                                                    <p class="ep_info">10 выпусков</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="accordion-collapse collapse" id="collapse_six" aria-labelledby="heading_six" data-bs-parent="#accordion">
+                                            <div class="accordion-body pt-0">
+                                                <div class="content_card px-2 pt-2 mt-0">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="heading_seven">
+                                            <button class="accordion-button collapsed pb-1" id="heading_seven" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_seven" aria-expanded="false" aria-controls="collapse_seven">
+                                                <div class="w-100 p-0">
+                                                    <p class="spec_name mt-0 me-5 mb-1">Терапевт</p>
+                                                    <p class="ep_info">10 выпусков</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="accordion-collapse collapse" id="collapse_seven" aria-labelledby="heading_seven" data-bs-parent="#accordion">
+                                            <div class="accordion-body pt-0">
+                                                <div class="content_card px-2 pt-2 mt-0">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="heading_eight">
+                                            <button class="accordion-button collapsed pb-1" id="heading_eight" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_eight" aria-expanded="false" aria-controls="collapse_eight">
+                                                <div class="w-100 p-0">
+                                                    <p class="spec_name mt-0 me-5 mb-1">Гинеколог</p>
+                                                    <p class="ep_info">10 выпусков</p>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="accordion-collapse collapse" id="collapse_eight" aria-labelledby="heading_eight" data-bs-parent="#accordion">
+                                            <div class="accordion-body pt-0">
+                                                <div class="content_card px-2 pt-2 mt-0">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div class="content_card px-3 pt-3">
+                                                    <div class="time pb-2">12:45</div>
+                                                    <a href="#">Профилактика сердечно сосудистых заболеваний после 45 лет</a>
+                                                    <a href="#" class="no_dec">
+                                                        <figure class="author d-flex justify-content-end align-items-center pt-2">
+                                                            <img src="./img/leo_b.jpg" alt="Лео Бокерия">
+                                                            <figcaption class="ps-2">Лео Бокерия</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content_card p-3">
+                                        <button type="button" class="btn btn-outline-info w-100 pb-0">
+                                            <p class="pt-1 pb-0">Смотреть всё</p> 
+                                        </button>
+                                    </div>
                                 </div>
                             </article>
                         </div>
